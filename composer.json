@@ -1,5 +1,5 @@
 {
-    "name": "xajayanthi/composer-wp-dev-kit",
+    "name": "composer-wp-dev-kit",
     "support": {
         "issues": "https://github.com/torounit/composer-wp-dev-kit/issues",
         "source": "https://github.com/torounit/composer-wp-dev-kit"
@@ -20,6 +20,7 @@
         "process-timeout": 0
     },
     "require-dev": {
+        "torounit/composer-wp-dev-kit": "jayanthi/wp-dev-kit-env-setup",
         "squizlabs/php_codesniffer": "^2.5.1"
     },
     "extra": {
