@@ -1,12 +1,16 @@
 {
-    "name": "composer-wp-dev-kit",
-    "repositories": {
-        "foo": {
+    "name": "xajayanthi/composer-wp-dev-kit",
+    "repositories": [    
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },   
+        {
             "type": "vcs",
-            "url": "https://github.com/xajayanthi/composer-wp-dev-kit",
-            "trunk-path": "jayanthi/wp-dev-kit-env-setup"
+            "url": "https://github.com/xajayanthi/composer-wp-dev-kit"
         }
-    },
+    ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.2",
         "johnpbloch/wordpress": "^4.7",
@@ -17,6 +21,7 @@
         "process-timeout": 0
     },
     "require-dev": {
+        "torounit/composer-wp-dev-kit": "dev-jayanthi/wp-dev-kit-env-setup",
         "squizlabs/php_codesniffer": "^2.5.1"
     },
     "extra": {
